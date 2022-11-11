@@ -31,5 +31,5 @@ app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
 readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
 
 app.listen(port, () => {
-  console.log(`Elbee server is running at http://localhost:${port}`);
+  console.log(`IYF server is running at http://localhost:${port}`);
 });
