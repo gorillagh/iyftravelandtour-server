@@ -1,7 +1,5 @@
 const User = require("../models/User");
 
-const currency = require("currency.js");
-
 exports.checkEmail = async (req, res) => {
   const { email } = req.headers;
   const user = await User.findOne({ email }).exec();
